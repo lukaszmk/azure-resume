@@ -17,19 +17,21 @@
 
 	<!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="frontend/css/default.css">
+	<link rel="stylesheet" href="frontend/css/layout.css">
+   <link rel="stylesheet" href="frontend/css/media-queries.css">
+   <link rel="stylesheet" href="frontend/css/magnific-popup.css">
+
 
    <!-- Script
    ================================================== -->
-   <script src="js/modernizr.js"></script>
-   <script src="main.js"></script>
+	<script src="frontend/js/modernizr.js"></script>
+	<script src="frontend/main.js"></script>
+	<script src="frontend/EventListener.js"></script>
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="shortcut icon" href="frontend/favicon.png" >
 
 </head>
 
@@ -54,16 +56,13 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Hi, I'm Lukasz</h1>
+            <h1 class="responsive-headline">Hi, I'm Łukasz</h1>
             
-            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
+            <p>and this page has been viewed <a id="count"></a> times :) </p> 
             <ul class="social">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://stfn.com.pl"><i class="fa fa-external-link"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/lukaszmk/azure-resume"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
@@ -83,7 +82,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic"  src="images/me.png" alt="" />
+            <img class="profile-pic"  src="frontend/images/me.png" alt="" />
 
          </div>
 
@@ -91,12 +90,11 @@
 
             <h2>ABOUT ME</h2>
 
-            <p> Hi, I'm Lukasz, <span>Software Tester Engineer </a></span>, <span> <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003866">Azure MVP</a></span>
-               and <span><a href="https://youtube.com/madebygps">YouTuber</a></span> focused on making cloud learning more accessible and less daunting for everyone. 
+            <p> Hi, I'm Lukasz, <span>Passionate in IT </a></span>, <span> </span>
+                and always eager to learn new things. This Azure Resume is a part of my journey to expand my skills and showcase what I have learned.
                
          </br>
       </br>
-       I built this page as part of the <span><a href="https://github.com/madebygps/cgc-azure-resume">Cloud Guru Azure Resume Challenge.</a></span>
             
 
          </div> <!-- end .main-col -->
@@ -115,7 +113,7 @@
       <div class="row education">
 
          <div class="three columns header-col">
-            <h1><span>Certifications</span></h1>
+            <h1><span>Courses</span></h1>
          </div>
 
          <div class="nine columns main-col">
@@ -124,8 +122,7 @@
 
                <div class="twelve columns">
 
-                  <h3>AWS Certified Developer Associate</h3>
-                  <p class="info"><em class="date">March 2018</em></p>
+                  <h3>Cisco CCNA</h3>
 
                </div>
 
@@ -135,8 +132,7 @@
 
                <div class="twelve columns">
 
-                  <h3>Azure Fundamentals AZ900</h3>
-                  <p class="info"><em class="date">July 2020</em></p>
+                  <h3>Cisco CCNA Security</h3>
 
                </div>
 
@@ -146,14 +142,62 @@
 
                <div class="twelve columns">
 
-                  <h3>LPI Linux Essentials</h3>
-                  <p class="info"><em class="date">February 2021</em></p>
+                  <h3>Microsoft 365 Mobility and Security</h3>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Azure Solution Architect Design</h3>
 
                </div>
 
             </div> <!-- item end -->
 
-         </div> <!-- main-col end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>AZ-1002 Configure Secure Access to Your Workloads using Azure virtual Networking</h3>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Certified Ethical Hacker V10</h3>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KHVCEHCUYI.png" target="_blank"> 
+                     TryHackMe - Pre Security</a></h3>   
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+            
+                  <h3><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SAZGLWEIIK.png" target="_blank">
+                     TryHackMe - Introduction to Cyber Security</a></h3>
+            
+               </div>
+            
+            </div>
+         </div> <!-- item end -->
+         
+      </div> <!-- main-col end -->
 
       </div> <!-- End Education -->
 
@@ -172,11 +216,13 @@
 
                <div class="twelve columns">
 
-                  <h3>A Cloud Guru</h3>
-                  <p class="info">Associate Community Training Architect <span>&bull;</span> <em class="date">November 2020 - Present</em></p>
+                  <h3>Test Engineer</h3>
+                  <p class="info">Test software<span>&bull;</span> <em class="date">August 2022 - Present</em></p>
 
                   <p>
-                  <li>Creating awesome cloud computing content.</li> 
+                  <li>Bulding and create test plans/cases</li> 
+                  <li>Ensure compliance with regulatory and quality standards</li> 
+                  <li>Planning and supervising test execution</li> 
                   </p>
 
                </div>
@@ -187,13 +233,14 @@
 
                <div class="twelve columns">
 
-                  <h3>Powwr | A Cognitive Energy Company</h3>
-                  <p class="info">Cloud Engineer <span>&bull;</span> <em class="date">May 2019 - August 2020</em></p>
+                  <h3>Senior IT Specialist</h3>
+                  <p class="info">System Administrator <span>&bull;</span> <em class="date">June 2018 - August 2022</em></p>
 
                   <p>
-                     <li>Developed cloud native solutions in Azure</li>
-                     <li>CI/CD with Azure DevOps</li>
-                     <li>Full stack .NET development</li>
+                     <li>Initiate and lead IT Projects</li>
+                     <li>Ensure Service availablity</li>
+                     <li>Manage Network and firewalls</li>
+                     <li>Administrating Exchange, Microsoft 365, Azure</li>
                   </p>
 
                </div>
@@ -204,45 +251,15 @@
 
                <div class="twelve columns">
 
-                  <h3>Powwr | A Cognitive Energy Company</h3>
-                  <p class="info">System Administrator <span>&bull;</span> <em class="date">September 2018 - May 2019</em></p>
+                  <h3>IT Specialist</h3>
+                  <p class="info"> Administrator <span>&bull;</span> <em class="date">June 2014 - June 2018</em></p>
 
                   <p>
-                  <li>Atlassian suite administration</li>
+                  <li>Network administration</li>
                   <li>O365 suite administration</li>
-                  <li>SQL server 2019 administration</li>
+                  <li>SQL server administration</li>
                   <li>Azure infrastructure administration</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tech Boston</h3>
-                  <p class="info">Help Desk Analyst <span>&bull;</span> <em class="date">October 2016 - August 2018</em></p>
-
-                  <p>
-                  <li>Front line help desk IT support</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Apple Danbury</h3>
-                  <p class="info">Mobile tech <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
-
-                  <p>
-                  <li>Repaired software and hardware issues related to iOS devices</li>
-                  
+                  <li>SCCM administration</li>
                   </p>
 
                </div>
@@ -268,12 +285,9 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://stfn.com.pl"><i class="fa fa-external-link"></i></a></li>
+               <li><a href="https://github.com/lukaszmk/azure-resume"><i class="fa fa-github"></i></a></li>
             </ul>
 
             <ul class="copyright">
@@ -293,13 +307,13 @@
    ================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="frontend/js/jquery-migrate-1.2.1.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+   <script src="frontend/js/jquery.flexslider.js"></script>
+   <script src="frontend/js/waypoints.js"></script>
+   <script src="frontend/js/jquery.fittext.js"></script>
+   <script src="frontend/js/magnific-popup.js"></script>
+   <script src="frontend/js/init.js"></script>
 
 </body>
 
