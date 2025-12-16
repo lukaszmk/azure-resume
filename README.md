@@ -3,14 +3,14 @@ This project is part of the Azure Resume Challenge, where I built and deployed a
 
 # Check it out
 
-[ Visit it](htthttps://seccloud.com.pl)
+[ Visit it](https://seccloud.com.pl)
 
 
 ## Pre-requisites
 
 I focus mostly on Azure, the function and all of the parts of the Azure Resume was created on Azure.
 
-To find more information how to achive this visit this site --> [stfn.com.pl](https://www.stfn.com.pl/projects/azure-resume-challenge)
+To find more information how to achive this visit this site --> [stfn.com.pl](https://seccloud.com.pl/azure-resume-challenge)
 
 ## Structure
   - Create Azure Storage
