@@ -3,7 +3,7 @@ This project is part of the Azure Resume Challenge, where I built and deployed a
 
 # Check it out
 
-[ Visit it](https://www.lmresume.com.pl)
+[ Visit it](htthttps://seccloud.com.pl)
 
 
 ## Pre-requisites
