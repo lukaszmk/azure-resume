@@ -4,12 +4,18 @@
 
    <!-- Basic Page Needs -->
    <meta charset="utf-8">
-   <title>Łukasz Resume</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <title>Łukasz Mielewczyk | Azure Cloud Engineer</title>
+   <meta
+      name="description"
+      content="The professional portfolio of Łukasz Mielewczyk, an IT professional specializing in Azure networking, cloud security, automation, hybrid identity, and software testing."
+   >
+   <meta name="author" content="Łukasz Mielewczyk">
 
-   <!-- Mobile Specific Metas -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!-- Mobile-Specific Metas -->
+   <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+   >
 
    <!-- CSS -->
    <link rel="stylesheet" href="frontend/css/default.css">
@@ -19,11 +25,11 @@
 
    <!-- Scripts -->
    <script src="frontend/js/modernizr.js"></script>
-   <script src="frontend/main.js"></script>
-   <script src="frontend/EventListener.js"></script>
+   <script src="frontend/main.js" defer></script>
+   <script src="frontend/EventListener.js" defer></script>
 
    <!-- Favicon -->
-   <link rel="shortcut icon" href="frontend/favicon.png" >
+   <link rel="shortcut icon" href="frontend/favicon.png">
 
 </head>
 
@@ -32,202 +38,621 @@
    <!-- Header -->
    <header id="home">
 
-      <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+      <nav id="nav-wrap" aria-label="Main navigation">
+         <a
+            class="mobile-btn"
+            href="#nav-wrap"
+            title="Show navigation"
+            aria-label="Show navigation"
+         >
+            Show navigation
+         </a>
+
+         <a
+            class="mobile-btn"
+            href="#home"
+            title="Hide navigation"
+            aria-label="Hide navigation"
+         >
+            Hide navigation
+         </a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li class="current">
+               <a class="smoothscroll" href="#home">Home</a>
+            </li>
+            <li>
+               <a class="smoothscroll" href="#about">About</a>
+            </li>
+            <li>
+               <a class="smoothscroll" href="#resume">Resume</a>
+            </li>
          </ul>
       </nav>
 
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Hi, I'm Łukasz</h1>
-            <p>This page has been viewed <a id="count"></a> times :)</p>
+
+            <p>
+               Azure Cloud Engineer focused on networking, security,
+               automation, and reliable infrastructure.
+            </p>
+
+            <p>
+               This page has been viewed
+               <span id="count" aria-live="polite">0</span>
+               times.
+            </p>
+
             <ul class="social">
-               <li><a href="https://seccloud.com.pl/"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/lukaszmk/azure-resume"><i class="fa fa-github"></i></a></li>
+               <li>
+                  <a
+                     href="https://seccloud.com.pl/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="Visit SecCloud"
+                     aria-label="Visit SecCloud"
+                  >
+                     <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="View my LinkedIn profile"
+                     aria-label="View my LinkedIn profile"
+                  >
+                     <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="https://github.com/lukaszmk/azure-resume"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="View the Azure Resume repository on GitHub"
+                     aria-label="View the Azure Resume repository on GitHub"
+                  >
+                     <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+               </li>
             </ul>
          </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+         <a
+            class="smoothscroll"
+            href="#about"
+            aria-label="Scroll to the About section"
+         >
+            <i class="icon-down-circle" aria-hidden="true"></i>
+         </a>
       </p>
 
    </header>
 
-   <!-- About Section -->
-   <section id="about">
+   <main>
 
-      <div class="row">
+      <!-- About Section -->
+      <section id="about">
 
-         <div class="three columns">
-            <img class="profile-pic" src="frontend/images/me.png" alt="Profile Picture" />
-         </div>
+         <div class="row">
 
-         <div class="nine columns main-col">
-            <h2>ABOUT ME</h2>
-<p>
-    Hi, I'm Lukasz, an IT professional with experience in systems administration,
-    networking, identity, and software testing. I am currently expanding my Azure
-    expertise in cloud networking, security, and automation through hands-on projects
-    and continuous learning.
-</p>
-         </div>
-
-      </div>
-
-   </section>
-
-   <!-- Resume Section -->
-   <section id="resume">
-
-      <!-- Courses -->
-      <div class="row education">
-         <div class="three columns header-col">
-            <h1><span>Courses</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item"><div class="twelve columns"><h3>Cisco CCNA</h3></div></div>
-            <div class="row item"><div class="twelve columns"><h3>Cisco CCNA Security</h3></div></div>
-            <div class="row item"><div class="twelve columns"><h3>Microsoft 365 Mobility and Security </h3></div></div>
-            <div class="row item"><div class="twelve columns"><h3>Azure Solution Architect Design</h3></div></div>
-            <div class="row item"><div class="twelve columns"><h3>AZ-1002 Configure Secure Access to Your Workloads using Azure Virtual Networking</h3></div></div>
-            <div class="row item"><div class="twelve columns"><h3>Certified Ethical Hacker V10</h3></div></div>
-            <div class="row item"><div class="twelve columns">
-               <h3><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KHVCEHCUYI.png" target="_blank">TryHackMe - Pre Security</a></h3>
-            </div></div>
-            <div class="row item"><div class="twelve columns">
-               <h3><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SAZGLWEIIK.png" target="_blank">TryHackMe - Introduction to Cyber Security</a></h3>
-            </div></div>
-
-         </div>
-      </div>
-
-       <!-- Projects -->
-      <div class="row education">
-         <div class="three columns header-col">
-            <h1><span>Projects</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item"><div class="twelve columns"><h3>Serverless Cloud Resume: Architected a static site using Azure Blob Storage and Azure CDN for global performance. 
-               Implemented a visitor counter using Azure Functions (Python) and CosmosDB. Automated deployment via GitHub Actions (CI/CD).</h3></div></div>
-            <div class="row item"><div class="twelve columns">Designed a fully automated delivery pipeline for a Python web app. leveraged Azure App Service and GitHub Actions to achieve zero-touch deployment, 
-                  secured via Managed Identities to adhere to least-privilege security principles.</a></h3>
-            </div></div>
-         </div>
-      </div>
-      
-      <!-- Certifications -->
-      <div class="row certification">
-         <div class="three columns header-col">
-            <h1><span>Certifications</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/5AF71DC9F0005CD5?sharingId=99B6C850AD2693FC" target="_blank"> AZ-900 Azure Fundamentals</a></h3>
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/AD8554E5655F6A4C?sharingId=99B6C850AD2693FC" target="_blank"> Microsoft Applied Skills: Administer Active Directory Domain Services</a></h3>                
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/3417D17DD4033925?sharingId=99B6C850AD2693FC" target="_blank"> Microsoft Applied Skills: Get started with identities and access using Microsoft Entra</a></h3>
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/714184D0582F34A0?sharingId=99B6C850AD2693FC" target="_blank"> Microsoft Applied Skills: Get started with Azure management tasks</a></h3>
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/81C7EA999F0EA0DC?sharingId=99B6C850AD2693FC" target="_blank"> Microsoft Applied Skills: Configure secure access to your workloads using Azure networking</a></h3>
-                  <h3><a href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/192F8E9DCD574214?sharingId=99B6C850AD2693FC" target="_blank"> Microsoft Applied Skills: Deploy and configure Azure Monitor</a></h3>
-                  
-                  <h3><a href="frontend/images/AI_Certificate.png" target="_blank"> Using AI In Business Development</a></h3>
-               </div>
+            <div class="three columns">
+               <img
+                  class="profile-pic"
+                  src="frontend/images/me.png"
+                  alt="Portrait of Łukasz Mielewczyk"
+               >
             </div>
 
-            
-         </div>
-      </div>
+            <div class="nine columns main-col">
+               <h2>About Me</h2>
 
-      <!-- Work Experience -->
-      <div class="row work">
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
+               <p>
+                  I am an IT professional with more than 10 years of experience
+                  in systems administration, networking, hybrid identity, and
+                  software testing. I am currently expanding my Azure expertise
+                  in cloud networking, security, Infrastructure as Code, and
+                  automation through hands-on projects and continuous learning.
+               </p>
 
-         <div class="nine columns main-col">
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Test Engineer</h3>
-                  <p class="info">Test software <span>&bull;</span> <em class="date">August 2022 - Present</em></p>
-                  <ul>
-                     <li>Building and creating test plans/cases</li>
-                     <li>Ensuring compliance with regulatory and quality standards</li>
-                     <li>Planning and supervising test execution</li>
-                  </ul>
-               </div>
-            </div>
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Senior IT Specialist</h3>
-                  <p class="info">System Administrator <span>&bull;</span> <em class="date">June 2018 - August 2022</em></p>
-                  <ul>
-                     <li>Initiated and led IT Projects</li>
-                     <li>Ensured service availability</li>
-                     <li>Managed network and firewalls</li>
-                     <li>Designed and implemented hybrid identity solution syncing on-prem AD with Azure Entra ID for 400+ users</li>
-                  </ul>
-               </div>
-            </div>
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>IT Specialist</h3>
-                  <p class="info">Administrator <span>&bull;</span> <em class="date">June 2014 - June 2018</em></p>
-                  <ul>
-                     <li>Network administration</li>
-                     <li>O365 suite administration</li>
-                     <li>SQL server administration</li>
-                     <li>Azure infrastructure administration</li>
-                     <li>SCCM administration</li>
-                  </ul>
-               </div>
+               <p>
+                  My professional background combines infrastructure operations
+                  with structured testing, troubleshooting, documentation, and
+                  quality assurance. My goal is to use this experience to design,
+                  deploy, secure, and validate reliable Azure environments.
+               </p>
             </div>
 
          </div>
-      </div>
 
-   </section>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume">
+
+         <!-- Technical Training -->
+         <div class="row education">
+
+            <div class="three columns header-col">
+               <h1><span>Technical Training</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>Cisco CCNA</h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>Cisco CCNA Security</h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>Microsoft 365 Mobility and Security</h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>Microsoft Azure Solutions Architect Design</h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>
+                        AZ-1002: Configure Secure Access to Your Workloads
+                        Using Azure Virtual Networking
+                     </h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>Certified Ethical Hacker v10</h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>
+                        <a
+                           href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KHVCEHCUYI.png"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           TryHackMe: Pre Security
+                        </a>
+                     </h3>
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>
+                        <a
+                           href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SAZGLWEIIK.png"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           TryHackMe: Introduction to Cyber Security
+                        </a>
+                     </h3>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Projects -->
+         <div class="row education">
+
+            <div class="three columns header-col">
+               <h1><span>Projects</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>Serverless Azure Resume</h3>
+
+                     <p>
+                        Designed and deployed a serverless résumé website using
+                        Azure Blob Storage and Azure CDN to provide static content
+                        delivery and improved global performance.
+                     </p>
+
+                     <ul>
+                        <li>
+                           Developed a visitor counter using Azure Functions
+                           and Python.
+                        </li>
+                        <li>
+                           Used Azure Cosmos DB to store and retrieve visitor
+                           statistics.
+                        </li>
+                        <li>
+                           Automated application deployment using GitHub Actions
+                           and a CI/CD workflow.
+                        </li>
+                        <li>
+                           Published the source code and project configuration
+                           in GitHub.
+                        </li>
+                     </ul>
+
+                     <p>
+                        <a
+                           href="https://github.com/lukaszmk/azure-resume"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           View the project on GitHub
+                        </a>
+                     </p>
+
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>Automated Azure App Service Deployment</h3>
+
+                     <p>
+                        Designed an automated delivery pipeline for a Python web
+                        application hosted on Azure App Service.
+                     </p>
+
+                     <ul>
+                        <li>
+                           Implemented a GitHub Actions workflow for automated
+                           application deployment.
+                        </li>
+                        <li>
+                           Used managed identities to avoid storing application
+                           credentials and to support least-privilege access.
+                        </li>
+                        <li>
+                           Reduced manual deployment activities by creating a
+                           repeatable, zero-touch delivery process.
+                        </li>
+                     </ul>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Certifications -->
+         <div class="row certification">
+
+            <div class="three columns header-col">
+               <h1><span>Certifications</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/5AF71DC9F0005CD5?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Certified: Azure Fundamentals (AZ-900)
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/AD8554E5655F6A4C?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Applied Skills: Administer Active Directory
+                           Domain Services
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/3417D17DD4033925?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Applied Skills: Get Started with Identities
+                           and Access Using Microsoft Entra
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/714184D0582F34A0?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Applied Skills: Get Started with Azure
+                           Management Tasks
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/pl-pl/lukaszMielewczyk-6143/81C7EA999F0EA0DC?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Applied Skills: Configure Secure Access to
+                           Your Workloads Using Azure Networking
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="https://learn.microsoft.com/api/credentials/share/en-us/lukaszMielewczyk-6143/192F8E9DCD574214?sharingId=99B6C850AD2693FC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Microsoft Applied Skills: Deploy and Configure
+                           Azure Monitor
+                        </a>
+                     </h3>
+
+                     <h3>
+                        <a
+                           href="frontend/images/AI_Certificate.png"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           Using AI in Business Development
+                        </a>
+                     </h3>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Work Experience -->
+         <div class="row work">
+
+            <div class="three columns header-col">
+               <h1><span>Experience</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>Test Engineer</h3>
+
+                     <p class="info">
+                        Software Testing
+                        <span>&bull;</span>
+                        <em class="date">August 2022 – Present</em>
+                     </p>
+
+                     <ul>
+                        <li>
+                           Design and maintain structured test plans, test cases,
+                           and verification procedures based on technical and
+                           product requirements.
+                        </li>
+                        <li>
+                           Plan, coordinate, and supervise test execution across
+                           hardware and software environments.
+                        </li>
+                        <li>
+                           Investigate failures, reproduce defects, document
+                           evidence, and communicate findings to engineering teams.
+                        </li>
+                        <li>
+                           Verify compliance with applicable quality and
+                           regulatory requirements.
+                        </li>
+                        <li>
+                           Contribute to product quality through risk-based
+                           testing, troubleshooting, and clear technical
+                           documentation.
+                        </li>
+                     </ul>
+
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>Senior IT Specialist</h3>
+
+                     <p class="info">
+                        Systems Administration
+                        <span>&bull;</span>
+                        <em class="date">June 2018 – August 2022</em>
+                     </p>
+
+                     <ul>
+                        <li>
+                           Initiated and led infrastructure projects from
+                           requirements analysis through implementation and
+                           operational handover.
+                        </li>
+                        <li>
+                           Maintained the availability and reliability of
+                           business-critical IT services.
+                        </li>
+                        <li>
+                           Administered enterprise network and firewall
+                           infrastructure, including access-control and
+                           connectivity changes.
+                        </li>
+                        <li>
+                           Designed and implemented a hybrid identity solution
+                           synchronizing an on-premises Active Directory
+                           environment with Microsoft Entra ID for more than
+                           400 users.
+                        </li>
+                        <li>
+                           Supported infrastructure troubleshooting, change
+                           implementation, documentation, and service improvement.
+                        </li>
+                     </ul>
+
+                  </div>
+               </div>
+
+               <div class="row item">
+                  <div class="twelve columns">
+
+                     <h3>IT Specialist</h3>
+
+                     <p class="info">
+                        IT Administration
+                        <span>&bull;</span>
+                        <em class="date">June 2014 – June 2018</em>
+                     </p>
+
+                     <ul>
+                        <li>
+                           Administered network infrastructure and supported
+                           connectivity troubleshooting.
+                        </li>
+                        <li>
+                           Managed Microsoft Office 365 services, users, and
+                           administrative configurations.
+                        </li>
+                        <li>
+                           Administered Microsoft SQL Server environments and
+                           supported database availability.
+                        </li>
+                        <li>
+                           Managed Azure infrastructure resources and supported
+                           cloud administration activities.
+                        </li>
+                        <li>
+                           Administered Microsoft System Center Configuration
+                           Manager for endpoint and software management.
+                        </li>
+                     </ul>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+
+   </main>
 
    <!-- Footer -->
    <footer>
+
       <div class="row">
 
          <div class="twelve columns">
+
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://stfn.com.pl"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://github.com/lukaszmk/azure-resume"><i class="fa fa-github"></i></a></li>
+               <li>
+                  <a
+                     href="https://www.linkedin.com/in/%C5%82ukasz-mielewczyk-3b4954b9/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="View my LinkedIn profile"
+                     aria-label="View my LinkedIn profile"
+                  >
+                     <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="https://seccloud.com.pl/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="Visit SecCloud"
+                     aria-label="Visit SecCloud"
+                  >
+                     <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="https://github.com/lukaszmk/azure-resume"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     title="View the Azure Resume repository on GitHub"
+                     aria-label="View the Azure Resume repository on GitHub"
+                  >
+                     <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+               </li>
             </ul>
+
             <ul class="copyright">
-               <li>Template by <a href="https://www.styleshout.com/free-templates/ceevee/" target="_blank">CeeVee</a></li>
+               <li>&copy; 2026 Łukasz Mielewczyk</li>
+               <li>
+                  Template by
+                  <a
+                     href="https://www.styleshout.com/free-templates/ceevee/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     CeeVee
+                  </a>
+               </li>
             </ul>
+
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top">
+            <a
+               class="smoothscroll"
+               title="Back to top"
+               href="#home"
+               aria-label="Back to top"
+            >
+               <i class="icon-up-open" aria-hidden="true"></i>
+            </a>
+         </div>
 
       </div>
+
    </footer>
 
    <!-- JavaScript -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="frontend/js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="frontend/js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+   <script>
+      window.jQuery ||
+         document.write(
+            '<script src="frontend/js/jquery-1.10.2.min.js"><\/script>'
+         );
+   </script>
+
+   <script src="frontend/js/jquery-migrate-1.2.1.min.js"></script>
    <script src="frontend/js/jquery.flexslider.js"></script>
    <script src="frontend/js/waypoints.js"></script>
    <script src="frontend/js/jquery.fittext.js"></script>
@@ -235,5 +660,4 @@
    <script src="frontend/js/init.js"></script>
 
 </body>
-
 </html>
